@@ -1,0 +1,49 @@
+body{
+    margin-top:70px;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/267ec993-f4d0-4efc-8ead-7e13713d1ebb/dcopfpu-a7d7cb09-5853-42f2-afe8-026016842105.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI2N2VjOTkzLWY0ZDAtNGVmYy04ZWFkLTdlMTM3MTNkMWViYlwvZGNvcGZwdS1hN2Q3Y2IwOS01ODUzLTQyZjItYWZlOC0wMjYwMTY4NDIxMDUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.eLITQ2rYZVblaycyEWZ6ujFIWdVzlodLD0rNat0lfKY");
+    
+}
+.c{
+  margin-top: 140px;
+  background-color: lightgreen;
+  
+}
+h1{
+    
+    font-size:50px;
+
+    color:greenyellow;
+    position: relative;
+    text-shadow: 0 0 4px greenyellow,
+0 0 10px greenyellow,
+0 0 20px greenyellow,
+0 0 60px greenyellow,
+0 0 80px greenyellow,
+0 0 90px greenyellow;
+    -webkit-text-stroke:0.3vw  greenyellow;
+    text-transform: uppercase;
+}
+h1::before{
+    content:attr(data-text);
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    color:greenyellow;
+  
+    -webkit-text-stroke:0.3vw #383d52;
+    border-right: 1px solid greenyellow;
+overflow:hidden;
+animation:animate 8s linear infinite;
+}
+
+@keyframes animate{
+0%,10%,100%{
+width:0;
+}
+70%,90%{
+width:90%;
+}
+
+}
